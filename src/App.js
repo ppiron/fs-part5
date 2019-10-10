@@ -44,7 +44,7 @@ function App() {
     }
     const user = await loginService.login(userData)
     if (user) {
-      console.log(user)
+      // console.log(user)
       localStorage.setItem('loggedUser', JSON.stringify(user))
       fetchBlogs(user)
     } else {
@@ -102,7 +102,7 @@ function App() {
   }
 
   if (user) {
-    console.log('pippo')
+    // console.log('pippo')
     const sortedBlogs = blogs.sort((a, b) => b.likes - a.likes)
     return (
       <>
@@ -138,14 +138,10 @@ function App() {
               <button onClick={closeAllBlogs}>Collapse all blogs</button>
             </>)
         })()}
-        {/* {(blogs.length > 0 && !allOpen) ?
-          (<button onClick={openAllBlogs}>Open all blogs</button>) :
-          (blogs.length > 0 && allOpen) ? (<><button onClick={openAllBlogs}>Open all blogs</button> <button onClick={closeAllBlogs}>Close all blogs</button></>) : null
-        } */}
       </>
     )
   } else if (user === null) {
-    console.log('pippa')
+    // console.log('pippa')
     return (
       <>
         <h1>log in to application</h1>
@@ -162,9 +158,9 @@ function App() {
       </>
     )
   } else if (user === undefined) {
-    console.log('crotalo')
+    // console.log('crotalo')
     return null
   }
 }
 
-export default App;
+export default App
