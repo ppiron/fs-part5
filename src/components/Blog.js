@@ -39,14 +39,14 @@ const Blog = ({ blog, visible, toggleBlogVisibility, incrementLikes, deleteBlog,
   )
 }
 
-Blog.propTypes = {
-  toggleBlogVisibility: PropTypes.func.isRequired,
-  incrementLikes: PropTypes.func.isRequired,
-  deleteBlog: PropTypes.func.isRequired,
-  visible: PropTypes.bool.isRequired,
-  showRemove: PropTypes.bool.isRequired,
-  blog: PropTypes.object.isRequired,
-}
+// Blog.propTypes = {
+//   toggleBlogVisibility: PropTypes.func.isRequired,
+//   incrementLikes: PropTypes.func.isRequired,
+//   deleteBlog: PropTypes.func.isRequired,
+//   visible: PropTypes.bool.isRequired,
+//   showRemove: PropTypes.bool.isRequired,
+//   blog: PropTypes.object.isRequired,
+// }
 
 
 
